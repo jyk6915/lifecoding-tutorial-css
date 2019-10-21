@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
+        body{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
         .container{
             display: flex;
             flex-direction: column;
+            width:800px;
+            border:1px solid gray;
         }
         header{
             border-bottom:1px solid gray;
@@ -32,6 +39,20 @@
         }
         main{
             padding:10px;
+        }
+/*
+        nav{
+            order:0;
+        }
+        main{
+            order:1;
+        }
+        aside{
+            order:2;
+        }
+*/
+        nav{
+            order:-1;
         }
     </style>
 </head>
